@@ -2,7 +2,7 @@
 export const initialState = {
 }
 
-const reducer = ()=>{fsa 
+const reducer = ()=>{
 }
 
 export default reducer;
