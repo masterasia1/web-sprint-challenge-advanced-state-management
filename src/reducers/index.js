@@ -1,3 +1,4 @@
+import { LOADING} from "../actions"
 
 export const initialState = {
     error: '',
@@ -5,7 +6,16 @@ export const initialState = {
     smurfs: [],
 }
 
-const reducer = ()=>{
+const reducer = (state = initialState, action)=>{
+    // eslint-disable-next-line default-case
+    switch (action.type) {
+        case LOADING:
+            return {
+                ...state,
+                loading: true
+            }
+    };
+    
 }
 
 export default reducer;
