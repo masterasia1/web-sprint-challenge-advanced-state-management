@@ -8,7 +8,8 @@ export const fetchSmurfs = () => (dispatch) => {
    dispatch({type: LOADING});
    axios.get ("http://localhost:3333/smurfs") 
    .then(res => {
-       console.log(res) 
+       console.log(res)
+       
    })
    
    .catch ((err) =>{
@@ -18,6 +19,9 @@ export const fetchSmurfs = () => (dispatch) => {
    )
 }
 
+export function addSmurf (){
+    
+}
 
 
 

@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {ERROR, ADD_SMURF} from "../actions/index"
+import {connect} from "react-redux"
 
 const AddForm = (props) => {
     const [state, setState] = useState({
@@ -18,7 +20,7 @@ const AddForm = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         if (state.name === "" || state.position === "" || state.nickname === "") {
-            errorMessage = "Name, position and nickname fields are required.";
+            errorMessage = "thi fi "
         }
     }
 

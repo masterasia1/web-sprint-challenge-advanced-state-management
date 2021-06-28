@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import {applyMiddleware, createStore} from "redux";
-import {AddForm} from "./components/AddForm";
-import {Header} from "./components/Header";
-import {Smurf} from "./components/Smurf";
-import {SmurfList} from "./components/SmurfList";
+import AddForm from "./components/AddForm";
+import Header from "./components/Header";
+import Smurf from "./components/Smurf";
+import SmurfList from "./components/SmurfList";
 import {Provider} from "react-redux";
 import reducer from "./reducers/index";
 import thunk from 'redux-thunk';

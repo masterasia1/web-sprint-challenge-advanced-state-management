@@ -1,4 +1,4 @@
-import { LOADING} from "../actions"
+import { LOADING, ERROR} from "../actions"
 
 export const initialState = {
     error: '',
@@ -14,7 +14,15 @@ const reducer = (state = initialState, action)=>{
                 ...state,
                 loading: true
             }
+            case ERROR:
+                return {
+                    ...state,
+                    loading: false,
+                    error: action.payload,
+                }
     };
+
+  
     
 }
 
